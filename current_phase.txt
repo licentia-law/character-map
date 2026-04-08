@@ -1,0 +1,19 @@
+CURRENT PHASE: 2 — 인증 구현
+
+COMPLETED:
+  [Phase 1] 프로젝트 셋업
+    - 폴더 구조 생성 (client/, server/, nginx/)
+    - client: React + Vite + Tailwind CSS + Zustand + react-force-graph-2d + Lucide React
+    - server: Express + better-sqlite3 + jsonwebtoken + dotenv + cors + nodemon
+    - server/.env 생성
+    - .gitignore 생성
+    - CLAUDE.md, settings.json, session_notes.txt, current_phase.txt, session_context.sh 세팅
+
+NEXT:
+  [Phase 2] 인증 구현
+    - POST /api/auth/login — 비밀번호 검증 + JWT 발급
+    - POST /api/auth/logout
+    - JWT 인증 미들웨어 (server/src/middleware/auth.js)
+    - SQLite DB 초기화 스크립트 (server/src/db/init.js)
+    - Express 앱 기본 설정 (server/src/index.js)
+    - 로그인 페이지 UI (client/src/pages/Login.jsx)

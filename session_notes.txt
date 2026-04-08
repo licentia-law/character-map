@@ -1,0 +1,29 @@
+# Character Map — Session Notes
+
+---
+
+## 2026-04-08
+
+### 완료 작업
+- PRD v2.0 파악
+- 프로젝트 폴더 구조 생성 (client/, server/, nginx/)
+- 패키지 설치
+  - client: React 19, Vite 8, Tailwind CSS 4, Zustand 5, react-force-graph-2d, Lucide React
+  - server: Express 5, better-sqlite3, jsonwebtoken, dotenv, cors, nodemon
+- server/.env 기본값 생성
+- .gitignore 생성
+- 개발 세팅 파일 생성 (CLAUDE.md, settings.json, current_phase.txt, session_notes.txt, session_context.sh)
+
+### 다음 세션에서 할 일
+- Phase 2: 인증 구현
+  1. server/src/db/init.js — SQLite 스키마 초기화
+  2. server/src/db/database.js — DB 연결
+  3. server/src/middleware/auth.js — JWT 미들웨어
+  4. server/src/routes/auth.js — 로그인/로그아웃 API
+  5. server/src/index.js — Express 앱 진입점
+  6. client/src/pages/Login.jsx — 로그인 UI
+
+### 참고 사항
+- server/.env의 APP_PASSWORD, JWT_SECRET 값은 배포 전 반드시 변경
+- SQLite 파일: server/data/database.sqlite (gitignore 처리됨)
+- 클라이언트 포트: 5173, 서버 포트: 3001
