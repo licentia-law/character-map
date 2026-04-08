@@ -4,3 +4,4 @@ server/node_modules/
 server/data/database.sqlite
 server/.env
 client/dist/
+.claude/worktrees/
