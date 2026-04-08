@@ -2,7 +2,7 @@
 
 ---
 
-## 2026-04-08
+## 2026-04-08 (Session 1)
 
 ### 완료 작업
 - PRD v2.0 파악
@@ -14,14 +14,36 @@
 - .gitignore 생성
 - 개발 세팅 파일 생성 (CLAUDE.md, settings.json, current_phase.txt, session_notes.txt, session_context.sh)
 
+---
+
+## 2026-04-08 (Session 2)
+
+### 완료 작업 — Phase 2 인증 구현
+- server/src/db/database.js — SQLite 연결 (WAL 모드, foreign_keys ON)
+- server/src/db/init.js — 3개 테이블 스키마 초기화 (ON DELETE CASCADE)
+- server/src/index.js — Express 진입점 (cors, json, initDb 호출)
+- server/src/middleware/auth.js — JWT Bearer 토큰 미들웨어
+- server/src/routes/auth.js — 로그인(7일 JWT 발급) / 로그아웃
+- client/vite.config.js — Tailwind CSS 4 플러그인, /api → :3001 프록시
+- client/src/index.css — Tailwind 기본 설정으로 교체
+- client/src/api/client.js — fetch 래퍼 (토큰 자동 첨부, 401 자동 로그아웃)
+- client/src/store/useStore.js — Zustand 단일 스토어
+- client/src/pages/Login.jsx — 로그인 UI (다크 테마, 비밀번호 토글)
+- client/src/App.jsx — 인증 기반 라우팅
+- 서버 동작 테스트 완료 (잘못된 비밀번호 → 401 정상 반환)
+
+### 결정 사항
+- JWT 토큰: localStorage 저장 (개인 도구, 단일 사용자)
+- Zustand: 단일 스토어 (auth + works + characters + relations + ui)
+- 인물 삭제 시 관계 cascade: DB 레벨 ON DELETE CASCADE로 처리
+
 ### 다음 세션에서 할 일
-- Phase 2: 인증 구현
-  1. server/src/db/init.js — SQLite 스키마 초기화
-  2. server/src/db/database.js — DB 연결
-  3. server/src/middleware/auth.js — JWT 미들웨어
-  4. server/src/routes/auth.js — 로그인/로그아웃 API
-  5. server/src/index.js — Express 앱 진입점
-  6. client/src/pages/Login.jsx — 로그인 UI
+- Phase 3: 작품 관리 CRUD
+  1. server/src/routes/works.js — CRUD API
+  2. client/src/pages/Home.jsx — 작품 카드 그리드
+  3. client/src/components/works/WorkForm.jsx — 추가/편집 폼
+  4. 타입·상태 필터 UI
+  5. App.jsx 라우팅 연결
 
 ### 참고 사항
 - server/.env의 APP_PASSWORD, JWT_SECRET 값은 배포 전 반드시 변경

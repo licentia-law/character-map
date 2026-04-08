@@ -1,19 +1,25 @@
-CURRENT PHASE: 2 — 인증 구현
+CURRENT PHASE: 3 — 작품 관리 CRUD
 
 COMPLETED:
   [Phase 1] 프로젝트 셋업
-    - 폴더 구조 생성 (client/, server/, nginx/)
-    - client: React + Vite + Tailwind CSS + Zustand + react-force-graph-2d + Lucide React
-    - server: Express + better-sqlite3 + jsonwebtoken + dotenv + cors + nodemon
-    - server/.env 생성
-    - .gitignore 생성
-    - CLAUDE.md, settings.json, session_notes.txt, current_phase.txt, session_context.sh 세팅
+    - 폴더 구조, 패키지 설치, 개발 세팅 파일
+
+  [Phase 2] 인증 구현
+    - server/src/db/database.js — SQLite 연결 (WAL, FK ON)
+    - server/src/db/init.js — works / characters / relations 스키마 초기화
+    - server/src/index.js — Express 앱 (cors, json, initDb)
+    - server/src/middleware/auth.js — JWT Bearer 토큰 검증
+    - server/src/routes/auth.js — POST /api/auth/login (7d JWT), /logout
+    - client/src/api/client.js — fetch 래퍼, localStorage 토큰 자동 첨부, 401 시 자동 로그아웃
+    - client/src/store/useStore.js — Zustand 단일 스토어 (auth/works/characters/relations/ui)
+    - client/src/pages/Login.jsx — 로그인 UI (다크 테마)
+    - client/src/App.jsx — 인증 상태 기반 라우팅
+    - client/vite.config.js — Tailwind CSS 4 플러그인 + /api 프록시 설정
 
 NEXT:
-  [Phase 2] 인증 구현
-    - POST /api/auth/login — 비밀번호 검증 + JWT 발급
-    - POST /api/auth/logout
-    - JWT 인증 미들웨어 (server/src/middleware/auth.js)
-    - SQLite DB 초기화 스크립트 (server/src/db/init.js)
-    - Express 앱 기본 설정 (server/src/index.js)
-    - 로그인 페이지 UI (client/src/pages/Login.jsx)
+  [Phase 3] 작품 관리
+    - GET/POST/PUT/DELETE /api/works 라우트
+    - client: Home.jsx (작품 카드 그리드)
+    - client: WorkForm.jsx (작품 추가/편집 슬라이드 패널)
+    - client: 타입·상태 필터
+    - App.jsx에 Home 라우팅 연결
