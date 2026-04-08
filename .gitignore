@@ -5,3 +5,4 @@ server/data/database.sqlite
 server/.env
 client/dist/
 .claude/worktrees/
+_temp/
