@@ -41,8 +41,12 @@ export default function WorkDetail() {
 
   useEffect(() => {
     fetchCharacters(selectedWorkId);
-    fetchRelations(selectedWorkId);
   }, [selectedWorkId]);
+
+  useEffect(() => {
+    if (tab === '인물') return;
+    fetchRelations(selectedWorkId).catch(() => {});
+  }, [tab, selectedWorkId]);
 
   const displayedChars = showFavOnly ? characters.filter((c) => c.is_favorite) : characters;
 

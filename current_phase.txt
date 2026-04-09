@@ -1,25 +1,43 @@
-CURRENT PHASE: 3 — 작품 관리 CRUD
+CURRENT PHASE: 5 — 관계 CRUD API 연결
 
 COMPLETED:
-  [Phase 1] 프로젝트 셋업
-    - 폴더 구조, 패키지 설치, 개발 세팅 파일
-
-  [Phase 2] 인증 구현
+  [Phase 1] 프로젝트 셋업 + DB 초기화
+    - client/server/nginx/docs 구조 세팅
+    - 의존성 설치 및 개발 실행 스크립트 구성
     - server/src/db/database.js — SQLite 연결 (WAL, FK ON)
     - server/src/db/init.js — works / characters / relations 스키마 초기화
-    - server/src/index.js — Express 앱 (cors, json, initDb)
-    - server/src/middleware/auth.js — JWT Bearer 토큰 검증
-    - server/src/routes/auth.js — POST /api/auth/login (7d JWT), /logout
-    - client/src/api/client.js — fetch 래퍼, localStorage 토큰 자동 첨부, 401 시 자동 로그아웃
-    - client/src/store/useStore.js — Zustand 단일 스토어 (auth/works/characters/relations/ui)
-    - client/src/pages/Login.jsx — 로그인 UI (다크 테마)
-    - client/src/App.jsx — 인증 상태 기반 라우팅
-    - client/vite.config.js — Tailwind CSS 4 플러그인 + /api 프록시 설정
 
-NEXT:
-  [Phase 3] 작품 관리
-    - GET/POST/PUT/DELETE /api/works 라우트
-    - client: Home.jsx (작품 카드 그리드)
-    - client: WorkForm.jsx (작품 추가/편집 슬라이드 패널)
+  [Phase 2] 인증 구현
+    - server/src/index.js — Express 앱 초기화 (cors, json, initDb)
+    - server/src/middleware/auth.js — JWT Bearer 토큰 검증
+    - server/src/routes/auth.js — POST /api/auth/login, /logout
+    - client/src/api/client.js — fetch 래퍼, 토큰 자동 첨부, 401 처리
+    - client/src/store/useStore.js — auth 상태 관리
+    - client/src/pages/Login.jsx — 로그인 UI
+    - client/src/App.jsx — 인증 상태 기반 화면 분기
+
+  [Phase 3] 작품 관리 CRUD
+    - server/src/routes/works.js — GET/POST/PUT/DELETE /api/works
+    - client/src/pages/Home.jsx — 작품 카드 그리드
+    - client/src/components/WorkForm.jsx — 작품 추가/편집 패널
     - client: 타입·상태 필터
-    - App.jsx에 Home 라우팅 연결
+    - works 단위 export/import API 및 UI 연결
+
+  [Phase 4] 인물 CRUD
+    - server/src/routes/characters.js 생성
+    - /api/works/:workId/characters GET/POST 구현
+    - /api/characters/:id PUT/PATCH favorite/DELETE 구현
+    - server/src/index.js 라우트 연결 (/api)
+    - 주의: 현재 환경에서 node 실행 불가로 런타임 수동 검증은 미완료
+
+IN PROGRESS:
+  [Phase 5] 관계 CRUD
+    - server: /api/works/:workId/relations GET/POST 구현
+    - server: /api/relations/:id PUT/DELETE 구현
+    - client/src/components/RelationForm.jsx ID 타입 정합성 수정 (Number 변환 제거)
+    - 맵 탭 데이터 연동 동작 검증
+
+REFERENCE DOCS:
+  - docs/codex/project-analysis-dtl.md
+  - docs/codex/development-todo.md
+  - docs/codex/phase-realignment.md

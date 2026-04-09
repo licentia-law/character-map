@@ -54,7 +54,14 @@ const useStore = create((set, get) => ({
 
   addCharacter: async (workId, char) => {
     const newChar = await api.createCharacter(workId, char);
-    set((s) => ({ characters: [...s.characters, newChar] }));
+    set((s) => ({
+      characters: [...s.characters, newChar],
+      works: s.works.map((w) => (
+        w.id === workId
+          ? { ...w, character_count: (w.character_count || 0) + 1 }
+          : w
+      )),
+    }));
   },
 
   updateCharacter: async (id, char) => {
@@ -69,7 +76,19 @@ const useStore = create((set, get) => ({
 
   deleteCharacter: async (id) => {
     await api.deleteCharacter(id);
-    set((s) => ({ characters: s.characters.filter((c) => c.id !== id) }));
+    set((s) => {
+      const target = s.characters.find((c) => c.id === id);
+      const nextCharacters = s.characters.filter((c) => c.id !== id);
+      const nextWorks = !target
+        ? s.works
+        : s.works.map((w) => (
+          w.id === target.work_id
+            ? { ...w, character_count: Math.max(0, (w.character_count || 0) - 1) }
+            : w
+        ));
+
+      return { characters: nextCharacters, works: nextWorks };
+    });
   },
 
   // ── 관계 ──────────────────────────────────────

@@ -5,6 +5,7 @@ const initDb = require('./db/init');
 
 const authRoutes = require('./routes/auth');
 const worksRoutes = require('./routes/works');
+const charactersRoutes = require('./routes/characters');
 
 const app = express();
 const PORT = process.env.PORT || 3001;
@@ -16,6 +17,7 @@ initDb();
 
 app.use('/api/auth', authRoutes);
 app.use('/api/works', worksRoutes);
+app.use('/api', charactersRoutes);
 
 app.listen(PORT, () => {
   console.log(`서버 실행 중: http://localhost:${PORT}`);
