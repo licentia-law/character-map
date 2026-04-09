@@ -1,4 +1,4 @@
-CURRENT PHASE: 7 — 설정/마무리
+CURRENT PHASE: 8 — 배포
 
 COMPLETED:
   [Phase 1] 프로젝트 셋업 + DB 초기화
@@ -47,11 +47,21 @@ COMPLETED:
     - 전체 보기(zoomToFit) 컨트롤 추가
     - 주의: 현재 환경에서 node 실행 불가로 런타임 수동 검증은 미완료
 
-IN PROGRESS:
   [Phase 7] 설정/마무리
-    - 전체 데이터 export/import API 및 UI 정리
-    - 데이터 초기화 기능 정리
-    - 최종 사용자 흐름 점검 및 문서 정리
+    - server/src/routes/settings.js 추가
+    - GET /api/export (전체 데이터 내보내기) 구현
+    - POST /api/import (전체 데이터 불러오기) 구현
+    - DELETE /api/reset (전체 데이터 초기화) 구현
+    - server/src/index.js에 settings 라우트 연결 (/api)
+    - client/src/api/client.js에 exportAll/importAll/resetAll 추가
+    - client/src/pages/Home.jsx에 전체 내보내기/가져오기/초기화 UI 연결
+    - 주의: 현재 환경에서 node 실행 불가로 런타임 수동 검증은 미완료
+
+IN PROGRESS:
+  [Phase 8] 배포
+    - Nginx/PM2/EC2 배포 구성 정리
+    - 환경변수/리버스 프록시/프로세스 관리 점검
+    - 배포 후 동작 점검
 
 REFERENCE DOCS:
   - docs/codex/project-analysis-dtl.md

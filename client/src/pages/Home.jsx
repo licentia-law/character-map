@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from 'react';
-import { Plus, Pencil, Trash2, BookOpen, LogOut, Users, Upload } from 'lucide-react';
+import { Plus, Pencil, Trash2, BookOpen, LogOut, Users, Upload, Download, RotateCcw } from 'lucide-react';
 import useStore from '../store/useStore';
 import WorkForm from '../components/WorkForm';
 import { api } from '../api/client';
@@ -50,11 +50,40 @@ export default function Home() {
     const reader = new FileReader();
     reader.onload = async (ev) => {
       const data = JSON.parse(ev.target.result);
-      await api.importWork(data);
+      const isValidBackup =
+        data &&
+        Array.isArray(data.works) &&
+        Array.isArray(data.characters) &&
+        Array.isArray(data.relations);
+
+      if (!isValidBackup) {
+        alert('전체 백업 파일 형식이 아닙니다. 홈의 전체 내보내기 파일을 선택하세요.');
+        e.target.value = '';
+        return;
+      }
+
+      await api.importAll(data);
       await fetchWorks();
     };
     reader.readAsText(file);
     e.target.value = '';
+  };
+
+  const handleExportAll = async () => {
+    const data = await api.exportAll();
+    const blob = new Blob([JSON.stringify(data, null, 2)], { type: 'application/json' });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement('a');
+    a.href = url;
+    a.download = `character-map-backup-${new Date().toISOString().slice(0, 10)}.json`;
+    a.click();
+    URL.revokeObjectURL(url);
+  };
+
+  const handleResetAll = async () => {
+    if (!confirm('전체 데이터를 초기화하시겠습니까? 이 작업은 되돌릴 수 없습니다.')) return;
+    await api.resetAll();
+    await fetchWorks();
   };
 
   return (
@@ -126,7 +155,21 @@ export default function Home() {
               className="flex items-center gap-2 bg-gray-800 hover:bg-gray-700 text-gray-300 px-4 py-2 rounded-lg text-sm font-medium transition-colors"
             >
               <Upload className="w-4 h-4" />
-              가져오기
+              전체 가져오기
+            </button>
+            <button
+              onClick={handleExportAll}
+              className="flex items-center gap-2 bg-gray-800 hover:bg-gray-700 text-gray-300 px-4 py-2 rounded-lg text-sm font-medium transition-colors"
+            >
+              <Download className="w-4 h-4" />
+              전체 내보내기
+            </button>
+            <button
+              onClick={handleResetAll}
+              className="flex items-center gap-2 bg-red-900/40 hover:bg-red-900/60 text-red-200 px-4 py-2 rounded-lg text-sm font-medium transition-colors"
+            >
+              <RotateCcw className="w-4 h-4" />
+              전체 초기화
             </button>
             <button
               onClick={openAdd}
