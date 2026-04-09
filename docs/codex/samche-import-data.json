@@ -1,0 +1,766 @@
+{
+  "exportedAt": "2026-04-09T14:49:31.875351",
+  "version": "2.0",
+  "works": [
+    {
+      "id": "fea943e4-7b43-46b4-bafa-127d871fdb1d",
+      "title": "삼체",
+      "type": "책",
+      "status": "완료",
+      "genre": "SF",
+      "created_at": "2026-04-09T14:49:31.875351"
+    }
+  ],
+  "characters": [
+    {
+      "id": "134d2f0a-1645-47cc-849e-4e7f350abd39",
+      "name": "예원제(叶文洁)",
+      "alias": "박사·배신자",
+      "desc": "천체물리학자. 문화대혁명 때 아버지를 잃고 인류에 환멸. 적색해안 기지에서 태양을 증폭기로 삼아 삼체 문명에 신호 발송.",
+      "group_name": "ETO",
+      "group_color": "#DB2777",
+      "importance": 5,
+      "appeared_at": "1권 — 문화대혁명 회상+현재",
+      "memo": "ETO의 정신적 기원. 삼체 1권 핵심 인물. 이후 시리즈 전체 사건의 도화선.",
+      "is_favorite": 1,
+      "work_id": "fea943e4-7b43-46b4-bafa-127d871fdb1d"
+    },
+    {
+      "id": "64c55f99-b550-4863-8933-bc6ffe61a81b",
+      "name": "왕먀오(汪淼)",
+      "alias": "나노기술자",
+      "desc": "나노기술 과학자. 과학자 연쇄 자살 사건을 조사하다 삼체 VR 게임에 빠져 삼체인 존재를 알게 됨. 우주배경복사 카운트다운 환각 체험.",
+      "group_name": "주인공",
+      "group_color": "#16A34A",
+      "importance": 5,
+      "appeared_at": "1권 — 주인공",
+      "memo": "삼체 1권의 시점 인물. 독자의 눈 역할. 스타 삼체 게임으로 삼체 행성 역사 목격.",
+      "is_favorite": 1,
+      "work_id": "fea943e4-7b43-46b4-bafa-127d871fdb1d"
+    },
+    {
+      "id": "aa7e2049-754c-4d4a-8e66-fbfc50d41cb0",
+      "name": "스창성(史强)",
+      "alias": "다쉬(大史)·형사",
+      "desc": "베이징 형사경찰. 거칠고 직관적인 인물. 왕먀오의 수사 파트너. 과학 지식 없이도 핵심을 꿰뚫는 통찰력 보유.",
+      "group_name": "정부·군",
+      "group_color": "#2563EB",
+      "importance": 4,
+      "appeared_at": "1권 — 초반",
+      "memo": "유머러스하고 인간적인 캐릭터. 1권 내내 왕먀오 곁에서 현실 감각 제공.",
+      "is_favorite": 0,
+      "work_id": "fea943e4-7b43-46b4-bafa-127d871fdb1d"
+    },
+    {
+      "id": "1b7f698c-e265-4a7b-8a82-2940490c86da",
+      "name": "뤄지(罗辑)",
+      "alias": "주술사(咒语者)·면벽자",
+      "desc": "사회학자 출신. 4명의 면벽자 중 유일하게 실질적 성과. 우주사회학 이론 완성, 암흑의 숲 억지력으로 삼체 함대 200년 억제.",
+      "group_name": "주인공",
+      "group_color": "#16A34A",
+      "importance": 5,
+      "appeared_at": "2권 — 주인공",
+      "memo": "삼체 2권 《암흑의 숲》 핵심. 면벽 계획의 영웅. 훗날 집행자 지위를 청신에게 양도.",
+      "is_favorite": 1,
+      "work_id": "fea943e4-7b43-46b4-bafa-127d871fdb1d"
+    },
+    {
+      "id": "b7987cfa-5cae-42d5-8038-56424870ddcb",
+      "name": "청신(程心)",
+      "alias": "집행자(执剑人)·어머니",
+      "desc": "우주공학자. 뤄지의 뒤를 이어 암흑의 숲 억지력 집행자가 되지만 결정적 순간 버튼을 누르지 못함. 논쟁적 인물.",
+      "group_name": "주인공",
+      "group_color": "#16A34A",
+      "importance": 5,
+      "appeared_at": "2권 후반~3권",
+      "memo": "삼체 3권 《사신의 영생》 주인공. 연약함과 모성 본능이 우주적 결과를 낳음.",
+      "is_favorite": 1,
+      "work_id": "fea943e4-7b43-46b4-bafa-127d871fdb1d"
+    },
+    {
+      "id": "ad311899-9642-47cc-8a7f-8278fe806606",
+      "name": "장베이하이(章北海)",
+      "alias": "미래의 해군·자연선택",
+      "desc": "중국 해군 장교. 극도의 냉철함으로 인류 생존 대비. 우주함대 시대에 생존 함대를 이끌며 자연선택 원칙 실행.",
+      "group_name": "정부·군",
+      "group_color": "#2563EB",
+      "importance": 4,
+      "appeared_at": "2권",
+      "memo": "면벽자는 아니지만 그에 준하는 철학적 무게감. 결말이 비극적이고 인상적.",
+      "is_favorite": 0,
+      "work_id": "fea943e4-7b43-46b4-bafa-127d871fdb1d"
+    },
+    {
+      "id": "347da069-9c8b-48a8-bf96-d3e080aa5019",
+      "name": "웨이청(魏成)",
+      "alias": "—",
+      "desc": "청신의 동료 과학자. 광속 우주선 개발 프로젝트 참여. 청신과 깊은 유대.",
+      "group_name": "과학자",
+      "group_color": "#06B6D4",
+      "importance": 2,
+      "appeared_at": "2권",
+      "memo": "조연. 청신의 감정적 배경을 이루는 인물.",
+      "is_favorite": 0,
+      "work_id": "fea943e4-7b43-46b4-bafa-127d871fdb1d"
+    },
+    {
+      "id": "134da5b3-921d-4e06-bdf9-6242190e5a4f",
+      "name": "마이크 에반스(伊文斯)",
+      "alias": "마이크 에반스·구원자파",
+      "desc": "석유 재벌 아들. 자연주의 신념을 가진 ETO 창립자. 인류보다 자연·삼체인을 우선시하는 강경파. 구원자파 리더.",
+      "group_name": "ETO",
+      "group_color": "#DB2777",
+      "importance": 4,
+      "appeared_at": "1권",
+      "memo": "ETO 내부 이념 갈등에서 가장 극단적 입장. 적색해안 기지와 연계.",
+      "is_favorite": 0,
+      "work_id": "fea943e4-7b43-46b4-bafa-127d871fdb1d"
+    },
+    {
+      "id": "92ef6bb0-e4ed-4827-a910-9d2f439675e7",
+      "name": "판 한(潘寒)",
+      "alias": "—",
+      "desc": "ETO 요원. 과학자 자살 사건 조사 과정에서 등장. ETO 내부 조직 운영에 관여.",
+      "group_name": "ETO",
+      "group_color": "#DB2777",
+      "importance": 2,
+      "appeared_at": "1권",
+      "memo": "조연 수준이지만 ETO 구조 이해에 도움.",
+      "is_favorite": 0,
+      "work_id": "fea943e4-7b43-46b4-bafa-127d871fdb1d"
+    },
+    {
+      "id": "966cf156-471f-4c80-8264-f7005ce6a94d",
+      "name": "삼체인(三体人)",
+      "alias": "트리솔라리안",
+      "desc": "알파 센타우리 삼체성계 거주 외계 문명. 세 항성 환경으로 탈수 능력 보유. 논리적이며 감정 은폐 불가. 지구 침략 결정.",
+      "group_name": "삼체인",
+      "group_color": "#DC2626",
+      "importance": 5,
+      "appeared_at": "1권(간접)~3권",
+      "memo": "시리즈 전체의 핵심 위협. 단일 집단이 아닌 내부 파벌 존재(침략파 vs 온건파).",
+      "is_favorite": 1,
+      "work_id": "fea943e4-7b43-46b4-bafa-127d871fdb1d"
+    },
+    {
+      "id": "b07f3d05-87ab-41a9-b1bf-3681efa8fdb4",
+      "name": "소피온(智子·지자)",
+      "alias": "지자·집행자",
+      "desc": "삼체인이 만든 양성자 컴퓨터. 11차원 전개 후 2차원 접이 방식 초지능체. 지구 과학 실험 방해 및 감시. 왕먀오 환각 유발.",
+      "group_name": "삼체인",
+      "group_color": "#DC2626",
+      "importance": 5,
+      "appeared_at": "1권 후반",
+      "memo": "지자는 삼체인의 지구 지배 핵심 수단. 두 개가 지구에 파견. 뤄지와 직접 대화.",
+      "is_favorite": 1,
+      "work_id": "fea943e4-7b43-46b4-bafa-127d871fdb1d"
+    },
+    {
+      "id": "c85641ee-1674-4418-83de-12632e5ef975",
+      "name": "예저타이(叶哲泰)",
+      "alias": "예원제의 아버지",
+      "desc": "물리학 교수. 문화대혁명 시기 홍위병에게 공개 비판받다 사망. 딸 예원제의 비극과 배신의 출발점.",
+      "group_name": "고전물리",
+      "group_color": "#7C3AED",
+      "importance": 3,
+      "appeared_at": "1권 — 회상",
+      "memo": "직접 등장은 회상뿐이지만 이야기 전체 동기의 근원.",
+      "is_favorite": 0,
+      "work_id": "fea943e4-7b43-46b4-bafa-127d871fdb1d"
+    },
+    {
+      "id": "670422e2-252b-48fb-9710-428405cafdbb",
+      "name": "딩이(丁仪)",
+      "alias": "물리학자 딩",
+      "desc": "천체물리학자. 기초 물리학 붕괴 현상 연구. 과학자 자살 사건 흐름 속 삼체 음모를 간파.",
+      "group_name": "과학자",
+      "group_color": "#06B6D4",
+      "importance": 3,
+      "appeared_at": "1권~2권",
+      "memo": "지자의 물리학 간섭을 가장 예리하게 분석. 뤄지에게 우주사회학 전수 역할.",
+      "is_favorite": 0,
+      "work_id": "fea943e4-7b43-46b4-bafa-127d871fdb1d"
+    },
+    {
+      "id": "343923a2-92ad-4571-b1fa-21ab4c8c5197",
+      "name": "추 안(楚岩)",
+      "alias": "—",
+      "desc": "자살한 과학자 중 한 명. 왕먀오 수사의 시발점.",
+      "group_name": "과학자",
+      "group_color": "#06B6D4",
+      "importance": 2,
+      "appeared_at": "1권",
+      "memo": "단독 역할은 적지만 플롯 트리거로서 중요.",
+      "is_favorite": 0,
+      "work_id": "fea943e4-7b43-46b4-bafa-127d871fdb1d"
+    },
+    {
+      "id": "71003968-9def-48d8-9e58-ef4d7864ec73",
+      "name": "프레데릭 타일러",
+      "alias": "타일러 제독",
+      "desc": "미국 해군 제독. 4명의 면벽자 중 한 명. 우주 함대를 활용한 군사 전략으로 삼체 함대 저지 시도. 계획이 간파당해 실패.",
+      "group_name": "정부·군",
+      "group_color": "#2563EB",
+      "importance": 3,
+      "appeared_at": "2권",
+      "memo": "면벽자 중 가장 군사적 접근. 결국 지자에게 전략 노출됨.",
+      "is_favorite": 0,
+      "work_id": "fea943e4-7b43-46b4-bafa-127d871fdb1d"
+    },
+    {
+      "id": "235aa5ba-45c9-4e70-8de8-ccbdfe046e1b",
+      "name": "맨 뒤비에르",
+      "alias": "—",
+      "desc": "면벽자 중 한 명. 계획의 구체적 내용 불명확. 결국 실패.",
+      "group_name": "정부·군",
+      "group_color": "#2563EB",
+      "importance": 2,
+      "appeared_at": "2권",
+      "memo": "4명의 면벽자 중 비교적 비중 낮음.",
+      "is_favorite": 0,
+      "work_id": "fea943e4-7b43-46b4-bafa-127d871fdb1d"
+    },
+    {
+      "id": "7b2eb2de-b66f-4250-b855-a3287fae03af",
+      "name": "히메네스",
+      "alias": "—",
+      "desc": "면벽자 중 한 명. 실질적 성과 없이 계획 실패.",
+      "group_name": "정부·군",
+      "group_color": "#2563EB",
+      "importance": 2,
+      "appeared_at": "2권",
+      "memo": "역할이 소략하게 처리됨.",
+      "is_favorite": 0,
+      "work_id": "fea943e4-7b43-46b4-bafa-127d871fdb1d"
+    },
+    {
+      "id": "b9b4d767-9fea-465a-99fd-5839f9af2e2f",
+      "name": "아이 AA(艾 AA)",
+      "alias": "AA",
+      "desc": "미래 시대의 인물. 청신의 동료이자 친구. 쾌활하고 현실적인 성격. 청신과 다양한 사건 동행.",
+      "group_name": "기타",
+      "group_color": "#6B7280",
+      "importance": 3,
+      "appeared_at": "3권",
+      "memo": "3권에서 청신의 심리적 지지대. 미래 인류 사회의 모습을 보여주는 창구.",
+      "is_favorite": 0,
+      "work_id": "fea943e4-7b43-46b4-bafa-127d871fdb1d"
+    },
+    {
+      "id": "f9823a15-5efc-44a2-a1d3-b959cae7440b",
+      "name": "윈톈밍(云天明)",
+      "alias": "별을 선물한 남자",
+      "desc": "청신을 사랑하는 남자. 뇌종양으로 사망 직전 뇌를 삼체인에게 보내짐. 삼체 문명에서 재건돼 동화 세 편으로 인류에게 암호 메시지 전달.",
+      "group_name": "기타",
+      "group_color": "#6B7280",
+      "importance": 4,
+      "appeared_at": "2권 후반~3권",
+      "memo": "삼체 3권의 숨은 핵심 인물. 동화 속 암호(곡률 추진·차원 봉인 등)는 류츠신 서사의 정수.",
+      "is_favorite": 0,
+      "work_id": "fea943e4-7b43-46b4-bafa-127d871fdb1d"
+    },
+    {
+      "id": "68622834-7d48-40b2-bc8f-62b8b5a97369",
+      "name": "토마스 웨이드(托马斯·维德)",
+      "alias": "빛의 속도 웨이드",
+      "desc": "인류 문명 재건기 강경파 지도자. 생존 우선·도덕 배제 원칙. 광속 우주선 개발 강행하다 청신에게 저지당함.",
+      "group_name": "정부·군",
+      "group_color": "#2563EB",
+      "importance": 4,
+      "appeared_at": "3권",
+      "memo": "청신과 이념적으로 정반대. 웨이드의 실패가 인류 최후 탈출 기회 중 하나를 닫음.",
+      "is_favorite": 0,
+      "work_id": "fea943e4-7b43-46b4-bafa-127d871fdb1d"
+    },
+    {
+      "id": "eda966dd-9fea-484d-94a6-72554b71f1e2",
+      "name": "가오보(高波)",
+      "alias": "—",
+      "desc": "물리학자. 과학자 자살 물결의 일원. 왕먀오의 수사 계기 중 하나.",
+      "group_name": "과학자",
+      "group_color": "#06B6D4",
+      "importance": 2,
+      "appeared_at": "1권",
+      "memo": "조연.",
+      "is_favorite": 0,
+      "work_id": "fea943e4-7b43-46b4-bafa-127d871fdb1d"
+    },
+    {
+      "id": "8a67652a-77c7-46b0-9a1c-1e2cb633d2fd",
+      "name": "두케(鲁佳)",
+      "alias": "—",
+      "desc": "ETO 연락 요원. 예원제-에반스의 조직 구조를 연결하는 역할.",
+      "group_name": "ETO",
+      "group_color": "#DB2777",
+      "importance": 2,
+      "appeared_at": "1권",
+      "memo": "조연.",
+      "is_favorite": 0,
+      "work_id": "fea943e4-7b43-46b4-bafa-127d871fdb1d"
+    },
+    {
+      "id": "a4c690cc-b438-42d5-bd74-0dbe3f6c69d3",
+      "name": "레이 디아즈(雷迪亚兹)",
+      "alias": "—",
+      "desc": "UN 안보리 연계 인물. 면벽자 프로젝트 감독 측.",
+      "group_name": "정부·군",
+      "group_color": "#2563EB",
+      "importance": 2,
+      "appeared_at": "2권",
+      "memo": "배경 인물.",
+      "is_favorite": 0,
+      "work_id": "fea943e4-7b43-46b4-bafa-127d871fdb1d"
+    },
+    {
+      "id": "2acf9d3e-e356-4cb3-a855-5703b97f6cdd",
+      "name": "가브리엘",
+      "alias": "—",
+      "desc": "미래 시대의 소녀. 청신이 만나는 인물들 중 하나. 문명 말기의 인류 생태 묘사에 기여.",
+      "group_name": "기타",
+      "group_color": "#6B7280",
+      "importance": 1,
+      "appeared_at": "3권",
+      "memo": "단역.",
+      "is_favorite": 0,
+      "work_id": "fea943e4-7b43-46b4-bafa-127d871fdb1d"
+    },
+    {
+      "id": "009e8ceb-f992-427c-bb2e-e3dfc0fb4f9c",
+      "name": "삼체 황제들/과학자들",
+      "alias": "주(纣)·진시황·뉴턴·갈릴레오 등",
+      "desc": "삼체 VR 게임 속 역사적 재연 인물들. 삼체 문명이 시뮬레이션한 인류 역사 속 지도자·과학자들.",
+      "group_name": "고전물리",
+      "group_color": "#7C3AED",
+      "importance": 3,
+      "appeared_at": "1권 — VR 게임 내",
+      "memo": "게임 내 에피소드로 삼체 행성의 정돈기/혼돈기 개념 설명하는 장치.",
+      "is_favorite": 0,
+      "work_id": "fea943e4-7b43-46b4-bafa-127d871fdb1d"
+    }
+  ],
+  "relations": [
+    {
+      "id": "27fe272b-9813-42bf-9c9d-a0888bcc5755",
+      "source": "134d2f0a-1645-47cc-849e-4e7f350abd39",
+      "target": "64c55f99-b550-4863-8933-bc6ffe61a81b",
+      "type": "적대",
+      "strength": 4,
+      "memo": "✕대",
+      "work_id": "fea943e4-7b43-46b4-bafa-127d871fdb1d"
+    },
+    {
+      "id": "2cf1566f-bd62-4e46-abeb-a89e40c39bb0",
+      "source": "134d2f0a-1645-47cc-849e-4e7f350abd39",
+      "target": "aa7e2049-754c-4d4a-8e66-fbfc50d41cb0",
+      "type": "적대",
+      "strength": 4,
+      "memo": "✕대",
+      "work_id": "fea943e4-7b43-46b4-bafa-127d871fdb1d"
+    },
+    {
+      "id": "75019c6c-96d4-45f1-b842-691edbbdabd1",
+      "source": "134d2f0a-1645-47cc-849e-4e7f350abd39",
+      "target": "134da5b3-921d-4e06-bdf9-6242190e5a4f",
+      "type": "동료",
+      "strength": 3,
+      "memo": "○협",
+      "work_id": "fea943e4-7b43-46b4-bafa-127d871fdb1d"
+    },
+    {
+      "id": "cf9c2f56-e0e6-40c3-870b-364d847dae54",
+      "source": "134d2f0a-1645-47cc-849e-4e7f350abd39",
+      "target": "92ef6bb0-e4ed-4827-a910-9d2f439675e7",
+      "type": "동료",
+      "strength": 3,
+      "memo": "○협",
+      "work_id": "fea943e4-7b43-46b4-bafa-127d871fdb1d"
+    },
+    {
+      "id": "df89c742-0f8e-4932-b58b-af1850681789",
+      "source": "134d2f0a-1645-47cc-849e-4e7f350abd39",
+      "target": "966cf156-471f-4c80-8264-f7005ce6a94d",
+      "type": "동료",
+      "strength": 3,
+      "memo": "○협",
+      "work_id": "fea943e4-7b43-46b4-bafa-127d871fdb1d"
+    },
+    {
+      "id": "ecb82a49-5dbd-4140-94be-3138108a3684",
+      "source": "134d2f0a-1645-47cc-849e-4e7f350abd39",
+      "target": "b07f3d05-87ab-41a9-b1bf-3681efa8fdb4",
+      "type": "동료",
+      "strength": 3,
+      "memo": "○협",
+      "work_id": "fea943e4-7b43-46b4-bafa-127d871fdb1d"
+    },
+    {
+      "id": "71687179-b81c-491c-ae3e-dc77063e89f8",
+      "source": "134d2f0a-1645-47cc-849e-4e7f350abd39",
+      "target": "c85641ee-1674-4418-83de-12632e5ef975",
+      "type": "가족",
+      "strength": 5,
+      "memo": "◎핵",
+      "work_id": "fea943e4-7b43-46b4-bafa-127d871fdb1d"
+    },
+    {
+      "id": "5f5e44ff-90c5-4357-9618-f40c21df2069",
+      "source": "134d2f0a-1645-47cc-849e-4e7f350abd39",
+      "target": "8a67652a-77c7-46b0-9a1c-1e2cb633d2fd",
+      "type": "동료",
+      "strength": 3,
+      "memo": "○협",
+      "work_id": "fea943e4-7b43-46b4-bafa-127d871fdb1d"
+    },
+    {
+      "id": "870f76cd-9ed1-47d4-a1a0-cfd7375713aa",
+      "source": "64c55f99-b550-4863-8933-bc6ffe61a81b",
+      "target": "aa7e2049-754c-4d4a-8e66-fbfc50d41cb0",
+      "type": "동료",
+      "strength": 3,
+      "memo": "○협",
+      "work_id": "fea943e4-7b43-46b4-bafa-127d871fdb1d"
+    },
+    {
+      "id": "862aa570-050f-440e-9696-39f4b8d0afb3",
+      "source": "64c55f99-b550-4863-8933-bc6ffe61a81b",
+      "target": "b07f3d05-87ab-41a9-b1bf-3681efa8fdb4",
+      "type": "적대",
+      "strength": 4,
+      "memo": "✕대",
+      "work_id": "fea943e4-7b43-46b4-bafa-127d871fdb1d"
+    },
+    {
+      "id": "ffa7f535-0b61-4d1a-aeb7-61475fc8c22b",
+      "source": "64c55f99-b550-4863-8933-bc6ffe61a81b",
+      "target": "670422e2-252b-48fb-9710-428405cafdbb",
+      "type": "동료",
+      "strength": 3,
+      "memo": "○협",
+      "work_id": "fea943e4-7b43-46b4-bafa-127d871fdb1d"
+    },
+    {
+      "id": "9604c22a-3ca0-4b55-87b4-ec701fc2c1f9",
+      "source": "64c55f99-b550-4863-8933-bc6ffe61a81b",
+      "target": "343923a2-92ad-4571-b1fa-21ab4c8c5197",
+      "type": "기타",
+      "strength": 2,
+      "memo": "△간",
+      "work_id": "fea943e4-7b43-46b4-bafa-127d871fdb1d"
+    },
+    {
+      "id": "453cbd38-777c-489d-853e-9175d05f10f4",
+      "source": "64c55f99-b550-4863-8933-bc6ffe61a81b",
+      "target": "eda966dd-9fea-484d-94a6-72554b71f1e2",
+      "type": "기타",
+      "strength": 2,
+      "memo": "△간",
+      "work_id": "fea943e4-7b43-46b4-bafa-127d871fdb1d"
+    },
+    {
+      "id": "f8beaf9a-5746-4924-ba3f-0316315ddb54",
+      "source": "64c55f99-b550-4863-8933-bc6ffe61a81b",
+      "target": "009e8ceb-f992-427c-bb2e-e3dfc0fb4f9c",
+      "type": "기타",
+      "strength": 2,
+      "memo": "△간",
+      "work_id": "fea943e4-7b43-46b4-bafa-127d871fdb1d"
+    },
+    {
+      "id": "88056d92-3c9b-4506-87a9-63b0caed9eab",
+      "source": "aa7e2049-754c-4d4a-8e66-fbfc50d41cb0",
+      "target": "343923a2-92ad-4571-b1fa-21ab4c8c5197",
+      "type": "기타",
+      "strength": 2,
+      "memo": "△간",
+      "work_id": "fea943e4-7b43-46b4-bafa-127d871fdb1d"
+    },
+    {
+      "id": "e9e8fd0b-2c6e-4969-8f2c-03e1bf8b32fa",
+      "source": "aa7e2049-754c-4d4a-8e66-fbfc50d41cb0",
+      "target": "eda966dd-9fea-484d-94a6-72554b71f1e2",
+      "type": "기타",
+      "strength": 2,
+      "memo": "△간",
+      "work_id": "fea943e4-7b43-46b4-bafa-127d871fdb1d"
+    },
+    {
+      "id": "f44d2a85-09a3-46e8-922b-20b6163b6c81",
+      "source": "1b7f698c-e265-4a7b-8a82-2940490c86da",
+      "target": "b7987cfa-5cae-42d5-8038-56424870ddcb",
+      "type": "동료",
+      "strength": 3,
+      "memo": "○협",
+      "work_id": "fea943e4-7b43-46b4-bafa-127d871fdb1d"
+    },
+    {
+      "id": "ae0eca2e-c807-4789-a1fb-a9d001e92d95",
+      "source": "1b7f698c-e265-4a7b-8a82-2940490c86da",
+      "target": "966cf156-471f-4c80-8264-f7005ce6a94d",
+      "type": "적대",
+      "strength": 4,
+      "memo": "✕대",
+      "work_id": "fea943e4-7b43-46b4-bafa-127d871fdb1d"
+    },
+    {
+      "id": "1c00257b-8f66-431d-8f80-6dc5a43cbf66",
+      "source": "1b7f698c-e265-4a7b-8a82-2940490c86da",
+      "target": "b07f3d05-87ab-41a9-b1bf-3681efa8fdb4",
+      "type": "적대",
+      "strength": 4,
+      "memo": "✕대",
+      "work_id": "fea943e4-7b43-46b4-bafa-127d871fdb1d"
+    },
+    {
+      "id": "df6114a3-edc6-492e-9891-9aca47bfdf0c",
+      "source": "1b7f698c-e265-4a7b-8a82-2940490c86da",
+      "target": "670422e2-252b-48fb-9710-428405cafdbb",
+      "type": "동료",
+      "strength": 3,
+      "memo": "○협",
+      "work_id": "fea943e4-7b43-46b4-bafa-127d871fdb1d"
+    },
+    {
+      "id": "28cd1446-9257-4d38-898d-317649e3f230",
+      "source": "1b7f698c-e265-4a7b-8a82-2940490c86da",
+      "target": "71003968-9def-48d8-9e58-ef4d7864ec73",
+      "type": "기타",
+      "strength": 2,
+      "memo": "△간",
+      "work_id": "fea943e4-7b43-46b4-bafa-127d871fdb1d"
+    },
+    {
+      "id": "3fcf76b8-70d5-4896-b22b-20316557a2a1",
+      "source": "1b7f698c-e265-4a7b-8a82-2940490c86da",
+      "target": "235aa5ba-45c9-4e70-8de8-ccbdfe046e1b",
+      "type": "기타",
+      "strength": 2,
+      "memo": "△간",
+      "work_id": "fea943e4-7b43-46b4-bafa-127d871fdb1d"
+    },
+    {
+      "id": "853cd444-d59f-4d80-bf1e-cc9fc379aa67",
+      "source": "1b7f698c-e265-4a7b-8a82-2940490c86da",
+      "target": "7b2eb2de-b66f-4250-b855-a3287fae03af",
+      "type": "기타",
+      "strength": 2,
+      "memo": "△간",
+      "work_id": "fea943e4-7b43-46b4-bafa-127d871fdb1d"
+    },
+    {
+      "id": "2e2a90d5-3c85-4ef4-81c8-555952ce4d0f",
+      "source": "1b7f698c-e265-4a7b-8a82-2940490c86da",
+      "target": "a4c690cc-b438-42d5-bd74-0dbe3f6c69d3",
+      "type": "기타",
+      "strength": 2,
+      "memo": "△간",
+      "work_id": "fea943e4-7b43-46b4-bafa-127d871fdb1d"
+    },
+    {
+      "id": "9d5f0e1f-cb10-4f83-97d2-9c350d92b9ee",
+      "source": "b7987cfa-5cae-42d5-8038-56424870ddcb",
+      "target": "347da069-9c8b-48a8-bf96-d3e080aa5019",
+      "type": "동료",
+      "strength": 3,
+      "memo": "○협",
+      "work_id": "fea943e4-7b43-46b4-bafa-127d871fdb1d"
+    },
+    {
+      "id": "9fc094f5-3243-41af-9831-6998b714e7fb",
+      "source": "b7987cfa-5cae-42d5-8038-56424870ddcb",
+      "target": "b9b4d767-9fea-465a-99fd-5839f9af2e2f",
+      "type": "동료",
+      "strength": 3,
+      "memo": "○협",
+      "work_id": "fea943e4-7b43-46b4-bafa-127d871fdb1d"
+    },
+    {
+      "id": "98950c35-07a4-41d5-a9c9-1bde31ecf795",
+      "source": "b7987cfa-5cae-42d5-8038-56424870ddcb",
+      "target": "f9823a15-5efc-44a2-a1d3-b959cae7440b",
+      "type": "가족",
+      "strength": 5,
+      "memo": "◎핵",
+      "work_id": "fea943e4-7b43-46b4-bafa-127d871fdb1d"
+    },
+    {
+      "id": "20d7c8a1-123a-4085-828a-3f83b5582257",
+      "source": "b7987cfa-5cae-42d5-8038-56424870ddcb",
+      "target": "68622834-7d48-40b2-bc8f-62b8b5a97369",
+      "type": "적대",
+      "strength": 4,
+      "memo": "✕대",
+      "work_id": "fea943e4-7b43-46b4-bafa-127d871fdb1d"
+    },
+    {
+      "id": "cc4b2cf2-92bf-4903-b3ce-8b6c548cb2bd",
+      "source": "b7987cfa-5cae-42d5-8038-56424870ddcb",
+      "target": "2acf9d3e-e356-4cb3-a855-5703b97f6cdd",
+      "type": "기타",
+      "strength": 2,
+      "memo": "△간",
+      "work_id": "fea943e4-7b43-46b4-bafa-127d871fdb1d"
+    },
+    {
+      "id": "e994cf5e-2fa2-4dee-9d73-a6ba90172468",
+      "source": "ad311899-9642-47cc-8a7f-8278fe806606",
+      "target": "71003968-9def-48d8-9e58-ef4d7864ec73",
+      "type": "기타",
+      "strength": 2,
+      "memo": "△간",
+      "work_id": "fea943e4-7b43-46b4-bafa-127d871fdb1d"
+    },
+    {
+      "id": "5cb754fb-6090-488b-b4c8-4a4c770e077e",
+      "source": "ad311899-9642-47cc-8a7f-8278fe806606",
+      "target": "235aa5ba-45c9-4e70-8de8-ccbdfe046e1b",
+      "type": "기타",
+      "strength": 2,
+      "memo": "△간",
+      "work_id": "fea943e4-7b43-46b4-bafa-127d871fdb1d"
+    },
+    {
+      "id": "c8b21318-4e7a-4bbb-b8d4-86b4436ce7c3",
+      "source": "ad311899-9642-47cc-8a7f-8278fe806606",
+      "target": "7b2eb2de-b66f-4250-b855-a3287fae03af",
+      "type": "기타",
+      "strength": 2,
+      "memo": "△간",
+      "work_id": "fea943e4-7b43-46b4-bafa-127d871fdb1d"
+    },
+    {
+      "id": "73cc1232-96b5-4533-9d91-16135bfa4810",
+      "source": "347da069-9c8b-48a8-bf96-d3e080aa5019",
+      "target": "68622834-7d48-40b2-bc8f-62b8b5a97369",
+      "type": "동료",
+      "strength": 3,
+      "memo": "○협",
+      "work_id": "fea943e4-7b43-46b4-bafa-127d871fdb1d"
+    },
+    {
+      "id": "79257852-2fdc-4109-a09e-090c8268b638",
+      "source": "134da5b3-921d-4e06-bdf9-6242190e5a4f",
+      "target": "92ef6bb0-e4ed-4827-a910-9d2f439675e7",
+      "type": "동료",
+      "strength": 3,
+      "memo": "○협",
+      "work_id": "fea943e4-7b43-46b4-bafa-127d871fdb1d"
+    },
+    {
+      "id": "111345b9-21aa-4807-999b-adaf904c5f07",
+      "source": "134da5b3-921d-4e06-bdf9-6242190e5a4f",
+      "target": "966cf156-471f-4c80-8264-f7005ce6a94d",
+      "type": "동료",
+      "strength": 3,
+      "memo": "○협",
+      "work_id": "fea943e4-7b43-46b4-bafa-127d871fdb1d"
+    },
+    {
+      "id": "6338082a-79a8-40eb-990b-56cfe700681a",
+      "source": "134da5b3-921d-4e06-bdf9-6242190e5a4f",
+      "target": "8a67652a-77c7-46b0-9a1c-1e2cb633d2fd",
+      "type": "동료",
+      "strength": 3,
+      "memo": "○협",
+      "work_id": "fea943e4-7b43-46b4-bafa-127d871fdb1d"
+    },
+    {
+      "id": "960efe70-cc44-4c7d-a654-be4d6876ba3f",
+      "source": "966cf156-471f-4c80-8264-f7005ce6a94d",
+      "target": "b07f3d05-87ab-41a9-b1bf-3681efa8fdb4",
+      "type": "가족",
+      "strength": 5,
+      "memo": "◎핵",
+      "work_id": "fea943e4-7b43-46b4-bafa-127d871fdb1d"
+    },
+    {
+      "id": "57fc5aee-627d-427e-be46-925b74b77f42",
+      "source": "966cf156-471f-4c80-8264-f7005ce6a94d",
+      "target": "71003968-9def-48d8-9e58-ef4d7864ec73",
+      "type": "적대",
+      "strength": 4,
+      "memo": "✕대",
+      "work_id": "fea943e4-7b43-46b4-bafa-127d871fdb1d"
+    },
+    {
+      "id": "5cd1e98c-8635-49a3-b125-b7c839ffd02a",
+      "source": "966cf156-471f-4c80-8264-f7005ce6a94d",
+      "target": "f9823a15-5efc-44a2-a1d3-b959cae7440b",
+      "type": "기타",
+      "strength": 2,
+      "memo": "△간",
+      "work_id": "fea943e4-7b43-46b4-bafa-127d871fdb1d"
+    },
+    {
+      "id": "9108d3dc-ab79-455c-b3b3-44c5167cb028",
+      "source": "b07f3d05-87ab-41a9-b1bf-3681efa8fdb4",
+      "target": "670422e2-252b-48fb-9710-428405cafdbb",
+      "type": "적대",
+      "strength": 4,
+      "memo": "✕대",
+      "work_id": "fea943e4-7b43-46b4-bafa-127d871fdb1d"
+    },
+    {
+      "id": "e96506b7-f93f-4131-8942-f29fb6ef17b7",
+      "source": "b07f3d05-87ab-41a9-b1bf-3681efa8fdb4",
+      "target": "71003968-9def-48d8-9e58-ef4d7864ec73",
+      "type": "적대",
+      "strength": 4,
+      "memo": "✕대",
+      "work_id": "fea943e4-7b43-46b4-bafa-127d871fdb1d"
+    },
+    {
+      "id": "0da8c11c-35ae-4bc6-9ef3-4bfcec510035",
+      "source": "343923a2-92ad-4571-b1fa-21ab4c8c5197",
+      "target": "eda966dd-9fea-484d-94a6-72554b71f1e2",
+      "type": "기타",
+      "strength": 2,
+      "memo": "△간",
+      "work_id": "fea943e4-7b43-46b4-bafa-127d871fdb1d"
+    },
+    {
+      "id": "598e5794-3ca2-4519-b155-5270cabf9005",
+      "source": "71003968-9def-48d8-9e58-ef4d7864ec73",
+      "target": "235aa5ba-45c9-4e70-8de8-ccbdfe046e1b",
+      "type": "동료",
+      "strength": 3,
+      "memo": "○협",
+      "work_id": "fea943e4-7b43-46b4-bafa-127d871fdb1d"
+    },
+    {
+      "id": "90647091-f07a-4ec9-9aa9-1138c216ea24",
+      "source": "71003968-9def-48d8-9e58-ef4d7864ec73",
+      "target": "7b2eb2de-b66f-4250-b855-a3287fae03af",
+      "type": "동료",
+      "strength": 3,
+      "memo": "○협",
+      "work_id": "fea943e4-7b43-46b4-bafa-127d871fdb1d"
+    },
+    {
+      "id": "d7e56d0c-d855-43eb-b283-cae9d8f8e5c9",
+      "source": "71003968-9def-48d8-9e58-ef4d7864ec73",
+      "target": "a4c690cc-b438-42d5-bd74-0dbe3f6c69d3",
+      "type": "기타",
+      "strength": 2,
+      "memo": "△간",
+      "work_id": "fea943e4-7b43-46b4-bafa-127d871fdb1d"
+    },
+    {
+      "id": "858813f7-771d-43b5-927f-126becd35b95",
+      "source": "235aa5ba-45c9-4e70-8de8-ccbdfe046e1b",
+      "target": "7b2eb2de-b66f-4250-b855-a3287fae03af",
+      "type": "동료",
+      "strength": 3,
+      "memo": "○협",
+      "work_id": "fea943e4-7b43-46b4-bafa-127d871fdb1d"
+    },
+    {
+      "id": "5ec7f553-b938-4b0b-8ad7-3d07fd192444",
+      "source": "b9b4d767-9fea-465a-99fd-5839f9af2e2f",
+      "target": "f9823a15-5efc-44a2-a1d3-b959cae7440b",
+      "type": "기타",
+      "strength": 2,
+      "memo": "△간",
+      "work_id": "fea943e4-7b43-46b4-bafa-127d871fdb1d"
+    }
+  ]
+}
