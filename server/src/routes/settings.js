@@ -101,6 +101,8 @@ router.post('/import', (req, res) => {
 });
 
 router.delete('/reset', (req, res) => {
+  db.prepare('DELETE FROM relations').run();
+  db.prepare('DELETE FROM characters').run();
   db.prepare('DELETE FROM works').run();
   res.json({ message: '전체 데이터가 초기화되었습니다.' });
 });

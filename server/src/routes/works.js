@@ -69,33 +69,4 @@ router.get('/:id/export', (req, res) => {
   res.json({ work, characters, relations });
 });
 
-router.post('/import', (req, res) => {
-  const { work, characters, relations } = req.body;
-
-  const newWorkId = randomUUID();
-  const created_at = new Date().toISOString();
-
-  db.prepare(
-    'INSERT INTO works (id, title, type, status, genre, created_at) VALUES (?, ?, ?, ?, ?, ?)'
-  ).run(newWorkId, work.title, work.type || '기타', work.status || '감상중', work.genre || '', created_at);
-
-  const idMap = {};
-  for (const char of (characters || [])) {
-    const newCharId = randomUUID();
-    idMap[char.id] = newCharId;
-    db.prepare(
-      'INSERT INTO characters (id, work_id, name, alias, desc, group_name, group_color, importance, appeared_at, memo, is_favorite) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)'
-    ).run(newCharId, newWorkId, char.name, char.alias || '', char.desc || '', char.group_name || '', char.group_color || '', char.importance || 1, char.appeared_at || '', char.memo || '', char.is_favorite || 0);
-  }
-
-  for (const rel of (relations || [])) {
-    db.prepare(
-      'INSERT INTO relations (id, work_id, source, target, type, strength, memo) VALUES (?, ?, ?, ?, ?, ?, ?)'
-    ).run(randomUUID(), newWorkId, idMap[rel.source] || rel.source, idMap[rel.target] || rel.target, rel.type || '기타', rel.strength || 1, rel.memo || '');
-  }
-
-  const newWork = db.prepare('SELECT *, 0 as character_count FROM works WHERE id = ?').get(newWorkId);
-  res.status(201).json(newWork);
-});
-
 module.exports = router;

@@ -52,7 +52,6 @@ export const api = {
 
   // export / import
   exportWork: (id) => request('GET', `/works/${id}/export`),
-  importWork: (data) => request('POST', '/works/import', data),
   exportAll: () => request('GET', '/export'),
   importAll: (data) => request('POST', '/import', data),
   resetAll: () => request('DELETE', '/reset'),
