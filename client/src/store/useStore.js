@@ -95,8 +95,13 @@ const useStore = create((set, get) => ({
   relations: [],
 
   fetchRelations: async (workId) => {
-    const relations = await api.getRelations(workId);
-    set({ relations });
+    try {
+      const relations = await api.getRelations(workId);
+      set({ relations });
+    } catch (error) {
+      set({ relations: [] });
+      throw error;
+    }
   },
 
   addRelation: async (workId, rel) => {

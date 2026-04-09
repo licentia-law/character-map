@@ -38,6 +38,7 @@ export default function WorkDetail() {
   const [showCharForm, setShowCharForm] = useState(false);
   const [relFormTarget, setRelFormTarget] = useState(undefined);
   const [showRelForm, setShowRelForm] = useState(false);
+  const [relationError, setRelationError] = useState('');
 
   useEffect(() => {
     fetchCharacters(selectedWorkId);
@@ -45,7 +46,19 @@ export default function WorkDetail() {
 
   useEffect(() => {
     if (tab === '인물') return;
-    fetchRelations(selectedWorkId).catch(() => {});
+    let active = true;
+
+    const loadRelations = async () => {
+      setRelationError('');
+      try {
+        await fetchRelations(selectedWorkId);
+      } catch {
+        if (active) setRelationError('관계 정보를 불러오지 못했습니다.');
+      }
+    };
+
+    loadRelations();
+    return () => { active = false; };
   }, [tab, selectedWorkId]);
 
   const displayedChars = showFavOnly ? characters.filter((c) => c.is_favorite) : characters;
@@ -244,6 +257,12 @@ export default function WorkDetail() {
               </div>
             )}
           </>
+        )}
+
+        {(tab === '관계' || tab === '맵') && relationError && (
+          <div className="mb-4 rounded-lg border border-red-900/40 bg-red-950/30 px-4 py-3 text-sm text-red-300">
+            {relationError}
+          </div>
         )}
 
         {tab === '관계' && (

@@ -46,7 +46,7 @@ export default function RelationForm({ relation, workId, onClose }) {
             <select
               className="w-full bg-gray-800 border border-gray-700 rounded-lg px-3 py-2 text-white text-sm focus:outline-none focus:border-indigo-500"
               value={form.source}
-              onChange={(e) => set('source', Number(e.target.value))}
+              onChange={(e) => set('source', e.target.value)}
               required
             >
               <option value="">선택하세요</option>
@@ -61,7 +61,7 @@ export default function RelationForm({ relation, workId, onClose }) {
             <select
               className="w-full bg-gray-800 border border-gray-700 rounded-lg px-3 py-2 text-white text-sm focus:outline-none focus:border-indigo-500"
               value={form.target}
-              onChange={(e) => set('target', Number(e.target.value))}
+              onChange={(e) => set('target', e.target.value)}
               required
             >
               <option value="">선택하세요</option>
