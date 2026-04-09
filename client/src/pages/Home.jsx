@@ -1,7 +1,8 @@
-import { useEffect, useState } from 'react';
-import { Plus, Pencil, Trash2, BookOpen, LogOut, Users } from 'lucide-react';
+import { useEffect, useRef, useState } from 'react';
+import { Plus, Pencil, Trash2, BookOpen, LogOut, Users, Upload } from 'lucide-react';
 import useStore from '../store/useStore';
 import WorkForm from '../components/WorkForm';
+import { api } from '../api/client';
 
 const TYPE_FILTERS = ['전체', '책', '영화', '드라마', '애니', '기타'];
 const STATUS_FILTERS = ['전체', '감상중', '완료'];
@@ -15,12 +16,14 @@ export default function Home() {
   const works = useStore((s) => s.works);
   const fetchWorks = useStore((s) => s.fetchWorks);
   const deleteWork = useStore((s) => s.deleteWork);
+  const setSelectedWorkId = useStore((s) => s.setSelectedWorkId);
   const logout = useStore((s) => s.logout);
 
   const [typeFilter, setTypeFilter] = useState('전체');
   const [statusFilter, setStatusFilter] = useState('전체');
   const [formTarget, setFormTarget] = useState(undefined);
   const [showForm, setShowForm] = useState(false);
+  const fileInputRef = useRef(null);
 
   useEffect(() => {
     fetchWorks();
@@ -39,6 +42,19 @@ export default function Home() {
   const handleDelete = async (id) => {
     if (!confirm('이 작품을 삭제하시겠습니까?')) return;
     await deleteWork(id);
+  };
+
+  const handleImportFile = (e) => {
+    const file = e.target.files[0];
+    if (!file) return;
+    const reader = new FileReader();
+    reader.onload = async (ev) => {
+      const data = JSON.parse(ev.target.result);
+      await api.importWork(data);
+      await fetchWorks();
+    };
+    reader.readAsText(file);
+    e.target.value = '';
   };
 
   return (
@@ -97,13 +113,29 @@ export default function Home() {
             ))}
           </div>
 
-          <button
-            onClick={openAdd}
-            className="ml-auto flex items-center gap-2 bg-indigo-600 hover:bg-indigo-500 text-white px-4 py-2 rounded-lg text-sm font-medium transition-colors"
-          >
-            <Plus className="w-4 h-4" />
-            작품 추가
-          </button>
+          <div className="ml-auto flex items-center gap-2">
+            <input
+              ref={fileInputRef}
+              type="file"
+              accept=".json"
+              className="hidden"
+              onChange={handleImportFile}
+            />
+            <button
+              onClick={() => fileInputRef.current?.click()}
+              className="flex items-center gap-2 bg-gray-800 hover:bg-gray-700 text-gray-300 px-4 py-2 rounded-lg text-sm font-medium transition-colors"
+            >
+              <Upload className="w-4 h-4" />
+              가져오기
+            </button>
+            <button
+              onClick={openAdd}
+              className="flex items-center gap-2 bg-indigo-600 hover:bg-indigo-500 text-white px-4 py-2 rounded-lg text-sm font-medium transition-colors"
+            >
+              <Plus className="w-4 h-4" />
+              작품 추가
+            </button>
+          </div>
         </div>
 
         {/* 작품 그리드 */}
@@ -118,18 +150,19 @@ export default function Home() {
             {filtered.map((work) => (
               <div
                 key={work.id}
-                className="relative bg-gray-900 border border-gray-800 rounded-xl p-5 hover:border-gray-700 transition-colors group"
+                onClick={() => setSelectedWorkId(work.id)}
+                className="relative bg-gray-900 border border-gray-800 rounded-xl p-5 hover:border-gray-700 transition-colors group cursor-pointer"
               >
                 {/* 수정·삭제 버튼 */}
                 <div className="absolute top-3 right-3 flex gap-1 opacity-0 group-hover:opacity-100 transition-opacity">
                   <button
-                    onClick={() => openEdit(work)}
+                    onClick={(e) => { e.stopPropagation(); openEdit(work); }}
                     className="p-1.5 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 transition-colors"
                   >
                     <Pencil className="w-3.5 h-3.5" />
                   </button>
                   <button
-                    onClick={() => handleDelete(work.id)}
+                    onClick={(e) => { e.stopPropagation(); handleDelete(work.id); }}
                     className="p-1.5 rounded-md text-gray-400 hover:text-red-400 hover:bg-gray-700 transition-colors"
                   >
                     <Trash2 className="w-3.5 h-3.5" />

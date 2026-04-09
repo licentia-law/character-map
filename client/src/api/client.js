@@ -50,7 +50,7 @@ export const api = {
   updateRelation: (id, rel) => request('PUT', `/relations/${id}`, rel),
   deleteRelation: (id) => request('DELETE', `/relations/${id}`),
 
-  // 설정
-  exportData: () => request('GET', '/export'),
-  importData: (data) => request('POST', '/import', data),
+  // export / import
+  exportWork: (id) => request('GET', `/works/${id}/export`),
+  importWork: (data) => request('POST', '/works/import', data),
 };
